@@ -38,6 +38,5 @@ public class CookieServlet extends HttpServlet {
         resp.addCookie(cookie);
         resp.addCookie(c2);
         resp.getWriter().write("24234");
-
     }
 }

@@ -10,6 +10,7 @@ import java.io.IOException;
 public class MyServlet extends HttpServlet {
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+        req.setAttribute("dfs","sfa");
         res.getWriter().write("my first servlet");
         ServletConfig servletConfig = this.getServletConfig();
         String val = servletConfig.getInitParameter("bbb");
